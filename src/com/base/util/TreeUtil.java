@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.base.entity.TreeNode;
-import com.jeecg.entity.SysMenu;
-import com.jeecg.entity.SysMenuBtn;
+import com.javazx.entity.SysMenu;
+import com.javazx.entity.SysMenuBtn;
 
 public class TreeUtil {
 	private final static String MENU_ID = "menu_";

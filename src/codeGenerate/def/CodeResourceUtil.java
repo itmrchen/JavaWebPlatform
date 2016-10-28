@@ -5,8 +5,8 @@ import java.util.ResourceBundle;
 
 public class CodeResourceUtil
 {
-  private static final ResourceBundle bundle = ResourceBundle.getBundle("jeecg/jeecg_database");
-  private static final ResourceBundle bundlePath = ResourceBundle.getBundle("jeecg/jeecg_config");
+  private static final ResourceBundle bundle = ResourceBundle.getBundle("javazx/javazx_database");
+  private static final ResourceBundle bundlePath = ResourceBundle.getBundle("javazx/javazx_config");
   public static String DIVER_NAME = "com.mysql.jdbc.Driver";
   public static String URL = "jdbc:mysql://localhost:3306/sys?useUnicode=true&characterEncoding=UTF-8";
   public static String USERNAME = "root";

@@ -1,19 +1,19 @@
-$package('jeecg.login');
-jeecg.login = function(){
+$package('javazx.login');
+javazx.login = function(){
 	return {
 		toLogin:function(){
 			try{
 				var form = $("#loginForm");
 				if(form.form('validate')){
-					jeecg.progress('Please waiting','Loading...');
-					jeecg.submitForm(form,function(data){
-						jeecg.closeProgress();
+					javazx.progress('Please waiting','Loading...');
+					javazx.submitForm(form,function(data){
+						javazx.closeProgress();
 						if(data.success){
 					 		window.location= "main.shtml";
 				        }else{
-				       	   jeecg.alert('提示',data.msg,'error');  
+				       	   javazx.alert('提示',data.msg,'error');  
 				        }
-				        jeecg.login.loadVrifyCode();//刷新验证码
+				        javazx.login.loadVrifyCode();//刷新验证码
 					});
 				}
 			}catch(e){
@@ -30,14 +30,14 @@ jeecg.login = function(){
 				window.top.location =  window.self.location;
 			}
 			//验证码图片绑定点击事件
-			$(".vc-pic").click(jeecg.login.loadVrifyCode);
+			$(".vc-pic").click(javazx.login.loadVrifyCode);
 			
 			var form = $("#loginForm");
-			form.submit(jeecg.login.toLogin);
+			form.submit(javazx.login.toLogin);
 		}
 	}
 }();
 
 $(function(){
-	jeecg.login.init();
+	javazx.login.init();
 });		

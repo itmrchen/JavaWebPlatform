@@ -4,7 +4,7 @@ import java.beans.PropertyEditorSupport;
 import org.springframework.util.StringUtils;
 /**
  * 
- * @author   www.jeecg.org int 2013-4-9 类型转换器
+ * @author   www.javazx.org int 2013-4-9 类型转换器
  *
  */
 public class MyEditor extends PropertyEditorSupport  {

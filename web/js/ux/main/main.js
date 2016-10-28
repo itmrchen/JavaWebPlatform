@@ -1,12 +1,12 @@
-$package('jeecg.main');
+$package('javazx.main');
 
-jeecg.main = function(){
+javazx.main = function(){
 	return {
 		treeSelect:function(){
 			var _this = $(this);
 			var title=_this.text();
 			var url=_this.attr('href');
-			jeecg.main.addTab(title,url);
+			javazx.main.addTab(title,url);
 			return false;
 		},
 		treeInit:function(){
@@ -52,7 +52,7 @@ jeecg.main = function(){
 			if(pwdForm.form('validate')){
 				var parentId =$('#search_parentId').val();
 				$("#edit_parentId").val(parentId)
-				jeecg.saveForm(pwdForm,function(data){
+				javazx.saveForm(pwdForm,function(data){
 					$('#modify-pwd-win').dialog('close');
 				    pwdForm.resetForm();
 				});
@@ -76,5 +76,5 @@ jeecg.main = function(){
 }();
 
 $(function(){
-	jeecg.main.init();
+	javazx.main.init();
 });		

@@ -1,5 +1,5 @@
-$package('jeecg.UserRole');
-jeecg.UserRole = function(){
+$package('javazx.UserRole');
+javazx.UserRole = function(){
 	var _box = null;
 	var _this = {
 		openAddRole:function(record){
@@ -77,5 +77,5 @@ jeecg.UserRole = function(){
 }();
 
 $(function(){
-	jeecg.UserRole.init();
+	javazx.UserRole.init();
 });		

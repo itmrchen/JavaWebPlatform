@@ -51,7 +51,7 @@
     <!-- 图片验证码配置开始 -->
     <servlet>
         <servlet-name>ImageServlet</servlet-name>
-        <servlet-class>com.jeecg.servlet.ImageServlet</servlet-class>
+        <servlet-class>com.javazx.servlet.ImageServlet</servlet-class>
         <init-param>
             <param-name>width</param-name>
             <param-value>65</param-value>

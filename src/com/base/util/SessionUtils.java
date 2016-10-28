@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.log4j.Logger;
 
 import com.base.util.Constant.SuperAdmin;
-import com.jeecg.entity.SysUser;
+import com.javazx.entity.SysUser;
 
 /**
  * 

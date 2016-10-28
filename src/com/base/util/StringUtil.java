@@ -25,7 +25,7 @@ import org.apache.commons.lang.StringUtils;
  * Copyright: Copyright (c) 2005
  * </p>
  * 
- * @author www.jeecg.org
+ * @author www.javazx.org
  * @version 1.0
  */
 
@@ -660,7 +660,7 @@ public class StringUtil {
 	/**
 	 * <br>
 	 * <b>功能：</b>将字符串转成list<br>
-	 * <b>作者：</b>www.jeecg.org<br>
+	 * <b>作者：</b>www.javazx.org<br>
 	 * <b>日期：</b> Oct 28, 2013 <br>
 	 * 
 	 * @param exp 分割符 如","
@@ -679,7 +679,7 @@ public class StringUtil {
 	/**
 	 * <br>
 	 * <b>功能：</b>数字转换成字符串<br>
-	 * <b>作者：</b>www.jeecg.org<br>
+	 * <b>作者：</b>www.javazx.org<br>
 	 * <b>日期：</b> Jul 30, 2013 <br>
 	 * 
 	 * @param arrs
@@ -704,7 +704,7 @@ public class StringUtil {
 	/**
 	 * <br>
 	 * <b>功能：</b>数字转换成字符串<br>
-	 * <b>作者：</b>www.jeecg.org<br>
+	 * <b>作者：</b>www.javazx.org<br>
 	 * <b>日期：</b> Jul 30, 2013 <br>
 	 * 
 	 * @param arrs
@@ -733,7 +733,7 @@ public class StringUtil {
 	/**
 	 * <br>
 	 * <b>功能：</b>替换回车<br>
-	 * <b>作者：</b>www.jeecg.org<br>
+	 * <b>作者：</b>www.javazx.org<br>
 	 * <b>日期：</b> Oct 26, 2013 <br>
 	 * 
 	 * @param str
@@ -1005,7 +1005,7 @@ public class StringUtil {
 	/**
 	 * <br>
 	 * <b>功能：</b>返回string型的字节数<br>
-	 * <b>作者：</b>www.jeecg.org<br>
+	 * <b>作者：</b>www.javazx.org<br>
 	 * <b>日期：</b> Sep 2, 2013 <br>
 	 * 
 	 * @param str
@@ -1021,7 +1021,7 @@ public class StringUtil {
 	/**
 	 * <br>
 	 * <b>功能：</b>详细的功能描述<br>
-	 * <b>作者：</b>www.jeecg.org<br>
+	 * <b>作者：</b>www.javazx.org<br>
 	 * <b>日期：</b> Sep 2, 2013 <br>
 	 * 
 	 * @param str 字符
@@ -1063,7 +1063,7 @@ public class StringUtil {
 	}
 
 	public static void main(String[] args) {
-		String str = "a  www.jeecg.orgozejun";
+		String str = "a  www.javazx.orgozejun";
 		System.out.println(getByteLength(str));
 		System.out.println(getByteStr(str, 6));
 

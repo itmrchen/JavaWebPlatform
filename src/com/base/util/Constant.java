@@ -9,7 +9,7 @@ public class Constant {
 	
 	/**
 	 * 超级管理员常量
-	 * @author  www.jeecg.org
+	 * @author  www.javazx.org
 	 *
 	 */
 	public static enum SuperAdmin {

@@ -14,7 +14,7 @@
 	<context:annotation-config/>
 	
 	<!-- 扫描Service -->
-	<context:component-scan base-package="com.jeecg.service" />
+	<context:component-scan base-package="com.javazx.service" />
 	<context:component-scan base-package="*.service.*" />
 	
 
@@ -34,7 +34,7 @@
 	</bean>
 
 	<aop:config>  
-        <aop:advisor pointcut="execution(* com.jeecg.service.*.*(..))"  advice-ref="txAdvice" />  
+        <aop:advisor pointcut="execution(* com.javazx.service.*.*(..))"  advice-ref="txAdvice" />
         <aop:advisor pointcut="execution(* *.service.*.*(..))"  advice-ref="txAdvice" />  
     </aop:config>  
   
@@ -54,7 +54,7 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="mapperLocations">
 			 <list>
-			  	<value>classpath:com/jeecg/mapper/*Mapper.xml</value>
+			  	<value>classpath:com/javazx/mapper/*Mapper.xml</value>
 			  	<value>classpath:*/mapper/*/*Mapper.xml</value>
 			 </list>
 		</property>
@@ -62,7 +62,7 @@
 	
 	<!-- 扫描mapper.java  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" autowire="byName">    
-	    <property name="basePackage" value="com.jeecg.dao,*.dao.*" />
+	    <property name="basePackage" value="com.javazx.dao,*.dao.*" />
 	    <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
 

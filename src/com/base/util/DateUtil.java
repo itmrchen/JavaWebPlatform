@@ -16,7 +16,7 @@ import org.apache.commons.lang.StringUtils;
 /**
  * <p>公共方法类</p>
  * <p>提供有关日期的实用方法集</p>
- * @author www.jeecg.org
+ * @author www.javazx.org
  * @version 1.0
  *
  */
@@ -2827,7 +2827,7 @@ public class DateUtil
 	 * 
 	 * <br>
 	 * <b>功能：</b>返回时分秒:HHmmss<br>
-	 * <b>作者：</b>www.jeecg.org<br>
+	 * <b>作者：</b>www.javazx.org<br>
 	 * <b>日期：</b> Aug 26, 2013 <br>
 	 * @param date
 	 * @return 

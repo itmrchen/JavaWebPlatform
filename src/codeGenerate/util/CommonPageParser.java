@@ -21,7 +21,7 @@ public class CommonPageParser {
 	
 	static {
 		try {
-			String templateBasePath = CodeGenerateFactory.getProjectPath() + "/resources/jeecg/template";
+			String templateBasePath = CodeGenerateFactory.getProjectPath() + "/resources/javazx/template";
 			Properties properties = new Properties();
 			properties.setProperty("resource.loader", "file");
 			properties.setProperty("file.resource.loader.description", "Velocity File Resource Loader");

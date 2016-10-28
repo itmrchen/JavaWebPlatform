@@ -1,5 +1,5 @@
-$package('jeecg.jeecgTest');
-jeecg.jeecgTest = function(){
+$package('javazx.jeecgTest');
+javazx.jeecgTest = function(){
 	var _box = null;
 	var _this = {
 		config:{
@@ -50,5 +50,5 @@ jeecg.jeecgTest = function(){
 }();
 
 $(function(){
-	jeecg.jeecgTest.init();
+	javazx.jeecgTest.init();
 });

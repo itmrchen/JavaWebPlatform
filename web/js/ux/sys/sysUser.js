@@ -1,5 +1,5 @@
-$package('jeecg.sysUser');
-jeecg.sysUser = function(){
+$package('javazx.sysUser');
+javazx.sysUser = function(){
 	var _box = null;
 	var _this = {
 		updatePwdAction:'updatePwd.do',
@@ -10,11 +10,11 @@ jeecg.sysUser = function(){
 			return $("#edit-pwd-win");
 		},
 		savePwd:function(){
-			jeecg.progress();//缓冲条
+			javazx.progress();//缓冲条
 			if(_this.editPwdForm().form('validate')){
 				_this.editPwdForm().attr('action',_this.updatePwdAction);
-				jeecg.saveForm(_this.editPwdForm(),function(data){
-					jeecg.closeProgress();//关闭缓冲条
+				javazx.saveForm(_this.editPwdForm(),function(data){
+					javazx.closeProgress();//关闭缓冲条
 					_this.editPwdWin().dialog('close');
 				});
 			 }
@@ -83,5 +83,5 @@ jeecg.sysUser = function(){
 }();
 
 $(function(){
-	jeecg.sysUser.init();
+	javazx.sysUser.init();
 });		

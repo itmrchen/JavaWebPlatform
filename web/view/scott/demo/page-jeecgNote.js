@@ -1,5 +1,5 @@
-$package('jeecg.jeecgNote');
-jeecg.jeecgNote = function(){
+$package('javazx.jeecgNote');
+javazx.jeecgNote = function(){
 	var _box = null;
 	var _this = {
 		config:{
@@ -60,5 +60,5 @@ jeecg.jeecgNote = function(){
 }();
 
 $(function(){
-	jeecg.jeecgNote.init();
+	javazx.jeecgNote.init();
 });

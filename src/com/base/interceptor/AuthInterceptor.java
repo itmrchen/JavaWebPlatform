@@ -15,12 +15,12 @@ import com.base.annotation.Auth;
 import com.base.util.HtmlUtil;
 import com.base.util.SessionUtils;
 import com.base.web.BaseAction;
-import com.jeecg.entity.SysUser;
+import com.javazx.entity.SysUser;
 
 
 /**
  * 权限拦截器
- * @author  www.jeecg.org
+ * @author  www.javazx.org
  *
  */
 public class AuthInterceptor extends HandlerInterceptorAdapter {

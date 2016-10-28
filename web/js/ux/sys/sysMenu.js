@@ -1,6 +1,6 @@
-$package('jeecg.sysMenu');
+$package('javazx.sysMenu');
 
-jeecg.sysMenu = function(){
+javazx.sysMenu = function(){
 	var _box = null;
 	var _this = {
 		toList:function(parentId){
@@ -56,7 +56,7 @@ jeecg.sysMenu = function(){
 			var line = $(html);
 			//版定删除按钮事件
 			$(".remove-btn",line).click(function(){
-				jeecg.confirm('Confirm','Are you sure you want to delete record?',function(r){
+				javazx.confirm('Confirm','Are you sure you want to delete record?',function(r){
 					if(r){
 						_this.delLine(line);
 					}
@@ -134,7 +134,7 @@ jeecg.sysMenu = function(){
 					{field:'createTime',title:'创建时间',width:120,sortable:true},
 					{field:'updateTime',title:'修改时间',width:120,sortable:true},
 					{field:'childMenus',title:'子目录',width:120,align:'center',formatter:function(value,row,index){
-						var html ="<a href='#' onclick='jeecg.sysMenu.toList("+row.id+")'>子菜单管理("+row.subCount+")</a>";
+						var html ="<a href='#' onclick='javazx.sysMenu.toList("+row.id+")'>子菜单管理("+row.subCount+")</a>";
 						return html;
 					}}
 				]],
@@ -160,7 +160,7 @@ jeecg.sysMenu = function(){
 			$('#addLine_btn').click(_this.addLine);
 			$('#addDefLine_btn').click(_this.addDefBtns);
 			$('#delAllLine_btn').click(function(){
-				jeecg.confirm('Confirm','Are you sure you want to delete record?',function(r){
+				javazx.confirm('Confirm','Are you sure you want to delete record?',function(r){
 					_this.delAllLine(false);
 				});
 			});
@@ -171,5 +171,5 @@ jeecg.sysMenu = function(){
 }();
 
 $(function(){
-	jeecg.sysMenu.init();
+	javazx.sysMenu.init();
 });		

@@ -2,13 +2,13 @@ package com.base.entity;
 
 
 /**
- * @author www.jeecg.org
+ * @author www.javazx.org
  */
 public class BaseEntity {
 	
 	 /**
 	  * 状态枚举
-	  * @author  www.jeecg.org
+	  * @author  www.javazx.org
 	  *
 	  */
 	 public static enum STATE {
@@ -32,7 +32,7 @@ public class BaseEntity {
 	 	
 	 	/**
 	 	 * 删除枚举
-	 	 * @author  www.jeecg.org
+	 	 * @author  www.javazx.org
 	 	 *
 	 	 */
 	 	public static enum DELETED {

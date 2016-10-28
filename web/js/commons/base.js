@@ -1,10 +1,10 @@
-$package('jeecg');
-var jeecg={
+$package('javazx');
+var javazx={
 	/*Json 工具类*/
 	isJson:function(str){
 		var obj = null; 
 		try{
-			obj = jeecg.paserJson(str);
+			obj = javazx.paserJson(str);
 		}catch(e){
 			return false;
 		}
@@ -37,8 +37,8 @@ var jeecg={
 	},
 	checkLogin:function(data){//检查是否登录超时
 		if(data && data.logoutFlag){
-			jeecg.closeProgress();
-			jeecg.alert('提示',"登录超时,点击确定重新登录.",'error',jeecg.toLogin);
+			javazx.closeProgress();
+			javazx.alert('提示',"登录超时,点击确定重新登录.",'error',javazx.toLogin);
 			return false;
 		}
 		return true;
@@ -53,7 +53,7 @@ var jeecg={
 			 	data:option,
 			 	success:function(data){
 			 		//坚持登录
-			 		if(!jeecg.checkLogin(data)){
+			 		if(!javazx.checkLogin(data)){
 			 			return false;
 			 		}		 	
 			 		if($.isFunction(callback)){
@@ -62,16 +62,16 @@ var jeecg={
 			 	},
 			 	error:function(response, textStatus, errorThrown){
 			 		try{
-			 			jeecg.closeProgress();
+			 			javazx.closeProgress();
 			 			var data = $.parseJSON(response.responseText);
 				 		//检查登录
-				 		if(!jeecg.checkLogin(data)){
+				 		if(!javazx.checkLogin(data)){
 				 			return false;
 				 		}else{
-					 		jeecg.alert('提示', data.msg || "请求出现异常,请联系管理员",'error');
+					 		javazx.alert('提示', data.msg || "请求出现异常,请联系管理员",'error');
 					 	}
 			 		}catch(e){
-			 			jeecg.alert('提示',"请求出现异常,请联系管理员.",'error');
+			 			javazx.alert('提示',"请求出现异常,请联系管理员.",'error');
 			 		}
 			 	},
 			 	complete:function(){
@@ -90,38 +90,38 @@ var jeecg={
 			 	},
 			 	error:function(response, textStatus, errorThrown){
 			 		try{
-			 			jeecg.closeProgress();
+			 			javazx.closeProgress();
 			 			var data = $.parseJSON(response.responseText);
 				 		//检查登录
-				 		if(!jeecg.checkLogin(data)){
+				 		if(!javazx.checkLogin(data)){
 				 			return false;
 				 		}else{
-					 		jeecg.alert('提示', data.msg || "请求出现异常,请联系管理员",'error');
+					 		javazx.alert('提示', data.msg || "请求出现异常,请联系管理员",'error');
 					 	}
 			 		}catch(e){
-			 			jeecg.alert('提示',"请求出现异常,请联系管理员.",'error');
+			 			javazx.alert('提示',"请求出现异常,请联系管理员.",'error');
 			 		}
 			 	},
 			 	complete:function(){
 			 	
 			 	}
 			 };
-			 jeecg.ajaxSubmit(form,option);
+			 javazx.ajaxSubmit(form,option);
 	},
 	saveForm:function(form,callback){
 		if(form.form('validate')){
-			jeecg.progress('Please waiting','Save ing...');
+			javazx.progress('Please waiting','Save ing...');
 			//ajax提交form
-			jeecg.submitForm(form,function(data){
-				jeecg.closeProgress();
+			javazx.submitForm(form,function(data){
+				javazx.closeProgress();
 			 	if(data.success){
 			 		if(callback){
 				       	callback(data);
 				    }else{
-			       		jeecg.alert('提示','保存成功.','info');
+			       		javazx.alert('提示','保存成功.','info');
 			        } 
 		        }else{
-		       	   jeecg.alert('提示',data.msg,'error');  
+		       	   javazx.alert('提示',data.msg,'error');  
 		        }
 			});
 		 }
@@ -132,28 +132,28 @@ var jeecg={
 	 * @param {} option {id:''} 
 	 */
 	getById:function(url,option,callback){
-		jeecg.progress();
-		jeecg.ajaxJson(url,option,function(data){
-			jeecg.closeProgress();
+		javazx.progress();
+		javazx.ajaxJson(url,option,function(data){
+			javazx.closeProgress();
 			if(data.success){
 				if(callback){
 			       	callback(data);
 			    }
 			}else{
-				jeecg.alert('提示',data.msg,'error');  
+				javazx.alert('提示',data.msg,'error');  
 			}
 		});
 	},
 	deleteForm:function(url,option,callback){
-		jeecg.progress();
-		jeecg.ajaxJson(url,option,function(data){
-				jeecg.closeProgress();
+		javazx.progress();
+		javazx.ajaxJson(url,option,function(data){
+				javazx.closeProgress();
 				if(data.success){
 					if(callback){
 				       	callback(data);
 				    }
 				}else{
-					jeecg.alert('提示',data.msg,'error');  
+					javazx.alert('提示',data.msg,'error');  
 				}
 		});
 	}

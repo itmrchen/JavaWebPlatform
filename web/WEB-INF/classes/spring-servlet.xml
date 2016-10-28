@@ -8,7 +8,7 @@
 	default-autowire="byName">
 
 	<!-- 扫描classpath的包下的所有类，该包路径下的类可以不需要配置bean了 -->
-	<context:component-scan base-package="com.jeecg.controller" />
+	<context:component-scan base-package="com.javazx.controller" />
 	<context:component-scan base-package="*.controller.*" />
 
 	<!-- Configures the @Controller programming model -->
