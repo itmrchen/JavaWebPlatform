@@ -21,7 +21,7 @@ import com.javazx.entity.SysUser;
 /**
  * 权限拦截器
  *
- * @author www.javazx.org
+ * @author www.javazx.com
  */
 public class AuthInterceptor extends HandlerInterceptorAdapter {
     private final static Logger log = Logger.getLogger(AuthInterceptor.class);

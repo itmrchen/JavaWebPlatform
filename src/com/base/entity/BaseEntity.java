@@ -2,7 +2,7 @@ package com.base.entity;
 
 
 /**
- * @author www.javazx.org
+ * @author www.javazx.com
  */
 public class BaseEntity {
 

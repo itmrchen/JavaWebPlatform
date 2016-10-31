@@ -30,17 +30,14 @@ public class MyBatisDB {
 		}
 		return sqlMapper.openSession();
 	}
-	//�ر�l��
 	public static void close(){
 		 getSqlSession().close();
 	}
 	
-	//�ύ����
 	public static void commit(){
 		 getSqlSession().commit();
 	}
 	
-	//����ع�
 	public static void rollback(){
 		 getSqlSession().rollback();
 	}
