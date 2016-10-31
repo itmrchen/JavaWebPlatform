@@ -24,7 +24,6 @@ public class MyBatisDB {
 		sqlMapper = new SqlSessionFactoryBuilder().build(reader);
 	}
 	 
-	 
 	public static SqlSession getSqlSession(){
 		if(sqlMapper == null ){
 			return null;

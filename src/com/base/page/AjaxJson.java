@@ -4,46 +4,46 @@ import java.util.Map;
 
 /**
  * $.ajax后需要接受的JSON
- * 
- * @author
- * 
+ *
+ * @author itmrchen
  */
 public class AjaxJson {
 
-	private boolean success = true;// 是否成功
-	private String msg = "操作成功";// 提示信息
-	private Object obj = null;// 其他信息
-	private Map<String, Object> attributes;// 其他参数
-	public Map<String, Object> getAttributes() {
-		return attributes;
-	}
+    private boolean success = true;// 是否成功
+    private String msg = "操作成功";// 提示信息
+    private Object obj = null;// 其他信息
+    private Map<String, Object> attributes;// 其他参数
 
-	public void setAttributes(Map<String, Object> attributes) {
-		this.attributes = attributes;
-	}
+    public Map<String, Object> getAttributes() {
+        return attributes;
+    }
 
-	public String getMsg() {
-		return msg;
-	}
+    public void setAttributes(Map<String, Object> attributes) {
+        this.attributes = attributes;
+    }
 
-	public void setMsg(String msg) {
-		this.msg = msg;
-	}
+    public String getMsg() {
+        return msg;
+    }
 
-	public Object getObj() {
-		return obj;
-	}
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
 
-	public void setObj(Object obj) {
-		this.obj = obj;
-	}
+    public Object getObj() {
+        return obj;
+    }
 
-	public boolean isSuccess() {
-		return success;
-	}
+    public void setObj(Object obj) {
+        this.obj = obj;
+    }
 
-	public void setSuccess(boolean success) {
-		this.success = success;
-	}
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
 
 }

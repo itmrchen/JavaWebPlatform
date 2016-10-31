@@ -55,5 +55,5 @@ javazx.jeecgUser = function(){
 }();
 
 $(function(){
-	javazx.jeecgUser.init();
+javazx.jeecgUser.init();
 });

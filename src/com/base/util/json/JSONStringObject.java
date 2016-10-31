@@ -2,20 +2,20 @@ package com.base.util.json;
 
 import org.json.JSONString;
 
-public class JSONStringObject implements JSONString{
+public class JSONStringObject implements JSONString {
 
     private String jsonString = null;
-    
-    public JSONStringObject(String jsonString){
+
+    public JSONStringObject(String jsonString) {
         this.jsonString = jsonString;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return jsonString;
     }
 
-    public String toJSONString(){
+    public String toJSONString() {
         return jsonString;
     }
 }
