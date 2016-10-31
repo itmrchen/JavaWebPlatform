@@ -7,20 +7,18 @@ import com.javazx.entity.SysRoleRel;
 
 /**
  * SysRoleRel Mapper
- * @author Administrator
  *
+ * @author itmrchen
  */
 public interface SysRoleRelDao<T> extends BaseDao<T> {
-	
-	public void deleteByRoleId(java.util.Map<String, Object> param);
-	
-	public void deleteByObjId(java.util.Map<String, Object> param);
-	
-	
-	public List<SysRoleRel> queryByRoleId(java.util.Map<String, Object> param);
-	
-	
-	public List<SysRoleRel> queryByObjId(java.util.Map<String, Object> param);
-	
-	
+
+    public void deleteByRoleId(java.util.Map<String, Object> param);
+
+    public void deleteByObjId(java.util.Map<String, Object> param);
+
+    public List<SysRoleRel> queryByRoleId(java.util.Map<String, Object> param);
+
+    public List<SysRoleRel> queryByObjId(java.util.Map<String, Object> param);
+
+
 }
