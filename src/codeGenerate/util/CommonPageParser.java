@@ -52,9 +52,9 @@ public class CommonPageParser {
 				log.info("替换文件:" + file.getAbsolutePath());
 			}
 			
-			Template template = ve.getTemplate(templateName, "UTF-8");
+			Template template = ve.getTemplate(templateName, CONTENT_ENCODING);
 			FileOutputStream fos = new FileOutputStream(file);
-			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fos, "UTF-8"));
+			BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fos, CONTENT_ENCODING));
 			template.merge(context, writer);
 			writer.flush();
 			writer.close();
