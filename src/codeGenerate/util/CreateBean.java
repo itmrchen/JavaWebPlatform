@@ -253,7 +253,13 @@ public class CreateBean {
 		System.out.println(sb.toString());
 		createFile(createPath, "", sb.toString());
 	}
-	
+
+	/**
+	 * 将表名转为实体类名
+	 * @param tableName
+	 * @description 如表名为aa_bb则转为AaBb  若没有下划线则直接首字母变大写
+	 * @return
+     */
 	public String getTablesNameToClassName(String tableName) {
 	
 		String[] split = tableName.split("_");
@@ -263,7 +269,6 @@ public class CreateBean {
 				String tempTableName = split[i].substring(0, 1).toUpperCase() + split[i].substring(1, split[i].length());
 				sb.append(tempTableName);
 			}
-			
 			return sb.toString();
 		}
 		String tempTables = split[0].substring(0, 1).toUpperCase() + split[0].substring(1, split[0].length());

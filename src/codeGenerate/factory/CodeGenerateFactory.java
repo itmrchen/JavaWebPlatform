@@ -22,20 +22,19 @@ public class CodeGenerateFactory {
 	public static void codeGenerate(String tableName, String codeName, String entityPackage, String keyType, String pageFolder,
 			boolean isFtl) {
 	
-		if (null == pageFolder || "".equals(pageFolder)) {
+		if (null == pageFolder || "".equals(pageFolder)) {//设置页面文件夹
 			pageFolder = "view";
 		}
 		
 		CreateBean createBean = new CreateBean();
 		createBean.setMysqlInfo(url, username, passWord);
 		
-		String className = createBean.getTablesNameToClassName(tableName);
-		String lowerName = className.substring(0, 1).toLowerCase() + className.substring(1, className.length());
-		
+		String className = createBean.getTablesNameToClassName(tableName);//表名转为实体类名
+		String lowerName = className.substring(0, 1).toLowerCase() + className.substring(1, className.length());//实体类首字母变小写
+
+		//具体值到javazx_config.properties文件中看
 		String srcPath = projectPath + CodeResourceUtil.source_root_package + "\\";
-		
 		String pckPath = srcPath + CodeResourceUtil.bussiPackageUrl + "\\";
-		
 		String webPath = projectPath + CodeResourceUtil.web_root_package + "\\" + pageFolder + "\\" + CodeResourceUtil.bussiPackageUrl
 				+ "\\";
 		
