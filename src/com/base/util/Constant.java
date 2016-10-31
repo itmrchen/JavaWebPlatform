@@ -7,7 +7,7 @@ public class Constant {
     /**
      * 超级管理员常量
      *
-     * @author www.javazx.com
+     * @author itmrchen
      */
     public static enum SuperAdmin {
         NO(0, "否"), YES(1, "是");

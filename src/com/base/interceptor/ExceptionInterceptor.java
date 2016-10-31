@@ -17,7 +17,7 @@ import com.base.util.HtmlUtil;
 /**
  * 异常拦截器
  *
- * @author www.javazx.com
+ * @author itmrchen
  */
 public class ExceptionInterceptor extends HandlerInterceptorAdapter {
     private final static Logger log = Logger.getLogger(ExceptionInterceptor.class);

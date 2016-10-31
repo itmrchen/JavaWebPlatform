@@ -47,7 +47,7 @@ public class HtmlUtil {
 	 * 
 	 * <br>
 	 * <b>功能：</b>输出HTML代码<br>
-	 * <b>作者：</b>www.javazx.com<br>
+	 * <b>作者：itmrchen
 	 * <b>日期：</b> Dec 14, 2016 <br>
 	 * @param response
 	 * @param htmlStr

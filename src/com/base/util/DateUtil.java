@@ -17,7 +17,7 @@ import org.apache.commons.lang.StringUtils;
  * <p>公共方法类</p>
  * <p>提供有关日期的实用方法集</p>
  *
- * @author www.javazx.com
+ * @author itmrchen
  * @version 1.0
  */
 

@@ -8,8 +8,6 @@ public class BaseEntity {
 
     /**
      * 状态枚举
-     *
-     * @author www.javazx.org
      */
     public static enum STATE {
         ENABLE(0, "可用"), DISABLE(1, "禁用");
@@ -34,8 +32,6 @@ public class BaseEntity {
 
     /**
      * 删除枚举
-     *
-     * @author www.javazx.org
      */
     public static enum DELETED {
         NO(0, "未删除"), YES(1, "已删除");
