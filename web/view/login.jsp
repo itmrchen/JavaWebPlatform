@@ -6,18 +6,18 @@
   <title></title>
   <link rel="shortcut icon" href="resources/fc/images/icon/favicon.ico">
   <!--[if lt IE 9]>
-   <script src="/plug-in/login/js/html5.js"></script>
+   <script src="plug-in/login/js/html5.js"></script>
   <![endif]-->
   <!--[if lt IE 7]>
-  <script src="/plug-in/login/js/iepng.js" type="text/javascript"></script>
+  <script src="plug-in/login/js/iepng.js" type="text/javascript"></script>
   <script type="text/javascript">
 	EvPNG.fix('div, ul, img, li, input'); //EvPNG.fix('包含透明PNG图片的标签'); 多个标签之间用英文逗号隔开。
 </script>
   <![endif]-->
-  <link href="/plug-in/login/css/zice.style.css" rel="stylesheet" type="text/css" />
-  <link href="/plug-in/login/css/buttons.css" rel="stylesheet" type="text/css" />
-  <link href="/plug-in/login/css/icon.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="/plug-in/login/css/tipsy.css" media="all" />
+  <link href="plug-in/login/css/zice.style.css" rel="stylesheet" type="text/css" />
+  <link href="plug-in/login/css/buttons.css" rel="stylesheet" type="text/css" />
+  <link href="plug-in/login/css/icon.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="plug-in/login/css/tipsy.css" media="all" />
   <style type="text/css">
 html {
 	background-image: none;
@@ -63,14 +63,14 @@ label.iPhoneCheckLabelOn span {
   <div id="alertMessage"></div>
   <div id="successLogin"></div>
   <div class="text_success">
-   <img src="/plug-in/login/images/loader_green.gif" alt="Please wait" />
+   <img src="plug-in/login/images/loader_green.gif" alt="Please wait" />
    <span>登陆成功!请稍后....</span>
   </div>
   <div id="login">
-   <div class="ribbon" style="background-image:url(/plug-in/login/images/typelogin.png);"></div>
+   <div class="ribbon" style="background-image:url(plug-in/login/images/typelogin.png);"></div>
    <div class="inner">
     <div class="logo">
-     <img src="/plug-in/login/images/toplogo.png"/>
+     <img src="plug-in/login/images/toplogo.png"/>
     </div>
     <div class="formLogin">
      <form name="formLogin" id="formLogin" action="loginController.do?login" check="checkuser.do" method="post">
@@ -109,11 +109,11 @@ label.iPhoneCheckLabelOn span {
    </div>
   </div>
   <!-- Link JScript-->
-  <script type="text/javascript" src="/plug-in/jquery/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="/plug-in/jquery/jquery.cookie.js"></script>
-  <script type="text/javascript" src="/plug-in/login/js/jquery-jrumble.js"></script>
-  <script type="text/javascript" src="/plug-in/login/js/jquery.tipsy.js"></script>
-  <script type="text/javascript" src="/plug-in/login/js/iphone.check.js"></script>
-  <script type="text/javascript" src="/plug-in/login/js/login.js"></script>
+  <script type="text/javascript" src="plug-in/jquery/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="plug-in/jquery/jquery.cookie.js"></script>
+  <script type="text/javascript" src="plug-in/login/js/jquery-jrumble.js"></script>
+  <script type="text/javascript" src="plug-in/login/js/jquery.tipsy.js"></script>
+  <script type="text/javascript" src="plug-in/login/js/iphone.check.js"></script>
+  <script type="text/javascript" src="plug-in/login/js/login.js"></script>
  </body>
 </html>
