@@ -35,7 +35,7 @@ public class JeecgNoteServiceTest {
 	public void testAdd(){
 		try {
 			JeecgNote person = new JeecgNote();
-			person.setContent("备注 www.javazx.org");
+			person.setContent("备注 www.javazx.com");
 			jeecgNoteService.add(person);
 			id = person.getId();
 			System.out.println("-testAdd-----id---------"+id);

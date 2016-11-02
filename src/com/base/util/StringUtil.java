@@ -660,8 +660,8 @@ public class StringUtil {
     /**
      * <br>
      * <b>功能：</b>将字符串转成list<br>
-     * <b>作者：</b>www.javazx.org<br>
-     * <b>日期：</b> Oct 28, 2013 <br>
+     * <b>作者：</b>www.javazx.com<br>
+     * <b>日期：</b> Oct 28, 2016 <br>
      *
      * @param exp   分割符 如","
      * @param value
@@ -679,8 +679,8 @@ public class StringUtil {
     /**
      * <br>
      * <b>功能：</b>数字转换成字符串<br>
-     * <b>作者：</b>www.javazx.org<br>
-     * <b>日期：</b> Jul 30, 2013 <br>
+     * <b>作者：</b>www.javazx.com<br>
+     * <b>日期：</b> Jul 30, 2016 <br>
      *
      * @param arrs
      * @return
@@ -704,8 +704,8 @@ public class StringUtil {
     /**
      * <br>
      * <b>功能：</b>数字转换成字符串<br>
-     * <b>作者：</b>www.javazx.org<br>
-     * <b>日期：</b> Jul 30, 2013 <br>
+     * <b>作者：</b>www.javazx.com<br>
+     * <b>日期：</b> Jul 30, 2016 <br>
      *
      * @param arrs
      * @return
@@ -733,8 +733,8 @@ public class StringUtil {
     /**
      * <br>
      * <b>功能：</b>替换回车<br>
-     * <b>作者：</b>www.javazx.org<br>
-     * <b>日期：</b> Oct 26, 2013 <br>
+     * <b>作者：</b>www.javazx.com<br>
+     * <b>日期：</b> Oct 26, 2016 <br>
      *
      * @param str
      * @return
@@ -1005,8 +1005,8 @@ public class StringUtil {
     /**
      * <br>
      * <b>功能：</b>返回string型的字节数<br>
-     * <b>作者：</b>www.javazx.org<br>
-     * <b>日期：</b> Sep 2, 2013 <br>
+     * <b>作者：</b>www.javazx.com<br>
+     * <b>日期：</b> Sep 2, 2016<br>
      *
      * @param str
      * @return
@@ -1021,8 +1021,8 @@ public class StringUtil {
     /**
      * <br>
      * <b>功能：</b>详细的功能描述<br>
-     * <b>作者：</b>www.javazx.org<br>
-     * <b>日期：</b> Sep 2, 2013 <br>
+     * <b>作者：</b>www.javazx.com<br>
+     * <b>日期：</b> Sep 2, 2016 <br>
      *
      * @param str      字符
      * @param limitLen 长度

@@ -2493,8 +2493,8 @@ public class DateUtil {
     /**
      * <br>
      * <b>功能：</b>返回时分秒:HHmmss<br>
-     * <b>作者：</b>www.javazx.org<br>
-     * <b>日期：</b> Aug 26, 2013 <br>
+     * <b>作者：</b>www.javazx.com<br>
+     * <b>日期：</b> Aug 26, 2016 <br>
      *
      * @param date
      * @return

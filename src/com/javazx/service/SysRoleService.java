@@ -18,7 +18,7 @@ import com.javazx.entity.SysRoleRel.RelType;
  * <b>功能：</b>SysRoleService<br>
  * <b>作者：</b>javazx<br>
  * <b>日期：</b> Dec 9, 2016 <br>
- * <b>版权所有：<b>版权所有(C) 2013，www.javazx.org<br>
+ * <b>版权所有：<b>版权所有(C) 2013，www.javazx.com<br>
  */
 @Service("sysRoleService")
 public class SysRoleService<T> extends BaseService<T> {

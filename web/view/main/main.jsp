@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <title>javazx-mybatis-framework</title>
+    <title>管理平台</title>
     <%@include file="/view/resource.jsp" %>
     <link rel="stylesheet" type="text/css" href="<%=basePath%>/css/main.css">
     <script type="text/javascript" src="<%=basePath%>/js/ux/main/main.js"></script>
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div data-options="region:'south',split:true,border:false" style="height: 30px;overflow:hidden;">
-		<div class="panel-header" style="border: none;text-align: center;" >CopyRight &copy; 2013 javazx 版权所有. &nbsp;&nbsp;官方网址: www.javazx.org</div>
+		<div class="panel-header" style="border: none;text-align: center;" >CopyRight &copy; 2013 javazx 版权所有. &nbsp;&nbsp;官方网址: www.javazx.com</div>
 	</div>
 	<!-- 中间内容页面 -->
 	<div data-options="region:'center'" >
@@ -57,10 +57,10 @@
 					<h3>技术交流</h3>
 					<p>  &nbsp;&nbsp;本系统由JEECG开发提供,如需个性化定制,外包项目,可与本人联系.</p>
 					<ul>
-						<li>交流群:106259349, 106838471, 289782002</li> 
-						<li>开发者：scott</li>
-						<li>邮箱：zhangdaiscott@163.com</li> 
-						<li>官网：<a href="http://www.javazx.org">http://www.javazx.org</a></li>
+						<li>交流群:61680071</li>
+						<li>开发者：itmrchen</li>
+						<li>邮箱：810890@163.com</li>
+						<li>官网：<a href="http://www.javazx.com">http://www.javazx.com</a></li>
 					</ul>
 				</div>
 				

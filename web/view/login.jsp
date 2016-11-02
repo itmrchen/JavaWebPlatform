@@ -105,7 +105,7 @@ label.iPhoneCheckLabelOn span {
   <div id="versionBar">
    <div class="copyright">
     &copy; 版权所有
-    <span class="tip"><a href="http://www.javazx.org" title="javazx-Mybatis 演示系统">javazx</a> (推荐使用IE8+,谷歌浏览器可以获得更快,更安全的页面响应速度)技术支持:<a href="javascrpt:void(0);" title="javazx-Mybatis 演示系统">javazx</a></span>
+    <span class="tip"><a href="http://www.javazx.com" title="javazx-Mybatis 演示系统">javazx</a> (推荐使用IE8+,谷歌浏览器可以获得更快,更安全的页面响应速度)技术支持:<a href="javascrpt:void(0);" title="javazx-Mybatis 演示系统">javazx</a></span>
    </div>
   </div>
   <!-- Link JScript-->
