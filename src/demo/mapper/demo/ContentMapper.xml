@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="demo.dao.demo.ContentDao" > 
+<!-- Result Map-->
+<resultMap id="BaseResultMap" type="demo.entity.demo.Content" >
+	<result column="id" property="id"/>
+	<result column="q" property="q"/>
+	<result column="local" property="local"/>
+	<result column="num" property="num"/>
+	<result column="update_flag" property="update_flag"/>
+	<result column="create_time" property="create_time"/>
+	<result column="update_time" property="update_time"/>
+	<result column="remark" property="remark"/>
+	<result column="update_num" property="update_num"/>
+	<result column="user_ip" property="user_ip"/>
+</resultMap>
+       
+<!-- content table all fields -->
+<sql id="Base_Column_List" >
+	 id,q,local,num,update_flag,create_time,update_time,remark,update_num,user_ip
+</sql>
+   
+   
+<!-- 查询条件 -->
+<sql id="Example_Where_Clause">
+where 1=1
+<trim  suffixOverrides="," >
+	<if test="id != null and id != ''" >
+	    and id =  #{id}
+	</if>
+	<if test="q != null and q != ''" >
+	    and q =  #{q}
+	</if>
+	<if test="local != null and local != ''" >
+	    and local =  #{local}
+	</if>
+	<if test="num != null and num != ''" >
+	    and num =  #{num}
+	</if>
+	<if test="update_flag != null and update_flag != ''" >
+	    and update_flag =  #{update_flag}
+	</if>
+	<if test="create_time != null and create_time != ''" >
+	    and create_time =  #{create_time}
+	</if>
+	<if test="update_time != null and update_time != ''" >
+	    and update_time =  #{update_time}
+	</if>
+	<if test="remark != null and remark != ''" >
+	    and remark =  #{remark}
+	</if>
+	<if test="update_num != null and update_num != ''" >
+	    and update_num =  #{update_num}
+	</if>
+	<if test="user_ip != null and user_ip != ''" >
+	    and user_ip =  #{user_ip}
+	</if>
+</trim>
+</sql>
+   
+
+<!-- 插入记录 -->
+<insert id="add" parameterType="Object" >
+  insert into content(id,q,local,num,update_flag,create_time,update_time,remark,update_num,user_ip)
+ values(#{id},#{q},#{local},#{num},#{update_flag},#{create_time},#{update_time},#{remark},#{update_num},#{user_ip})
+</insert>
+
+<!-- 根据id，修改记录-->  
+ <update id="update" parameterType="Object" >
+  update content set q=#{q},local=#{local},num=#{num},update_flag=#{update_flag},create_time=#{create_time},update_time=#{update_time},remark=#{remark},update_num=#{update_num},user_ip=#{user_ip} where id=#{id}
+ </update>
+ 
+ <!-- 修改记录，只修改只不为空的字段 -->
+<update id="updateBySelective" parameterType="Object" >
+	update content set 
+	<trim  suffixOverrides="," >
+	<if test="q != null  ">
+		q=#{q},
+	</if>
+	<if test="local != null  ">
+		local=#{local},
+	</if>
+	<if test="num != null  ">
+		num=#{num},
+	</if>
+	<if test="update_flag != null  ">
+		update_flag=#{update_flag},
+	</if>
+	<if test="create_time != null  ">
+		create_time=#{create_time},
+	</if>
+	<if test="update_time != null  ">
+		update_time=#{update_time},
+	</if>
+	<if test="remark != null  ">
+		remark=#{remark},
+	</if>
+	<if test="update_num != null  ">
+		update_num=#{update_num},
+	</if>
+	<if test="user_ip != null  ">
+		user_ip=#{user_ip},
+	</if>
+	</trim> where id=#{id}
+</update>
+
+<!-- 删除记录 -->
+<delete id="delete" parameterType="Object">
+	delete 	 from content where id = #{id}
+</delete>
+ 
+<!-- 根据id查询 内容 -->
+<select id="queryById"  resultMap="BaseResultMap" parameterType="Object">
+	select <include refid="Base_Column_List" /> 
+	 from content where id = #{id}
+</select>
+
+<!-- 内容 列表总数-->
+<select id="queryByCount" resultType="java.lang.Integer"  parameterType="Object">
+	select count(1) from content 
+	<include refid="Example_Where_Clause"/>
+</select>
+  	
+<!-- 查询内容列表 -->
+<select id="queryByList" resultMap="BaseResultMap"  parameterType="Object">
+	select 
+	<include refid="Base_Column_List"/>
+	from content 
+	<include refid="Example_Where_Clause"/>
+	<if test="pager.orderCondition != null and pager.orderCondition != ''" >
+      ${pager.orderCondition}
+    </if>
+    <if test="pager.mysqlQueryCondition != null and pager.mysqlQueryCondition != ''" >
+       ${pager.mysqlQueryCondition}
+    </if>
+</select>
+  	
+</mapper>   
